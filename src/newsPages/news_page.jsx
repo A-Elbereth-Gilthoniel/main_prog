@@ -8,18 +8,18 @@ import Select from "../components/Select";
 //import {BrowserRouter, Route} from "react-router-dom";
 
 function NewsPage() {
-    // let [news, setNews] = useState([{id: 1, name: "ffff", author: "Rinat", rating: 0, date: 4},
-    // {id: 2, name: "afff 2", author: "fdf", rating: 0, date: 6},
-    // {id: 3, name: "ffff 3", author: "fsfdf", rating: 0, date: 8},
-    // {id: 4, name: "ffff 3", author: "fsfdf", rating: 0, date: 9},
-    // {id: 5, name: "cfff 3", author: "fsfdf", rating: 0, date: 1},
-    // {id: 6, name: "ffkf 3", author: "fsfdf", rating: 0, date: 3},
-    // {id: 7, name: "ffff 3", author: "fsfdf", rating: 0, date: 2},
-    // {id: 8, name: "dfff 3", author: "fsfdf", rating: 0, date: 11},
-    // {id: 9, name: "ffgf 3", author: "fsfdf", rating: 0, date: 10},
-    // {id: 10, name: "ffff 3", author: "fsfdf", rating: 0, date: 30}])
+    let [news, setNews] = useState([{id: 1, name: "ffff", author: "Rinat", rating: 0, date: 4},
+    {id: 2, name: "afff 2", author: "fdf", rating: 0, date: 6},
+    {id: 3, name: "ffff 3", author: "fsfdf", rating: 0, date: 8},
+    {id: 4, name: "ffff 3", author: "fsfdf", rating: 0, date: 9},
+    {id: 5, name: "cfff 3", author: "fsfdf", rating: 0, date: 1},
+    {id: 6, name: "ffkf 3", author: "fsfdf", rating: 0, date: 3},
+    {id: 7, name: "ffff 3", author: "fsfdf", rating: 0, date: 2},
+    {id: 8, name: "dfff 3", author: "fsfdf", rating: 0, date: 11},
+    {id: 9, name: "ffgf 3", author: "fsfdf", rating: 0, date: 10},
+    {id: 10, name: "ffff 3", author: "fsfdf", rating: 0, date: 30}])
     let [selectedSort, setSelectedSort] = useState('')
-    let [news, setNews] = useState([])
+    // let [news, setNews] = useState([])
 
     // function goToPage(id) {
     //     <Route path="/id={id}">
@@ -40,9 +40,9 @@ function NewsPage() {
                             return a[sort] - b[sort];
 }))}}
 
-    fetch("http://127.0.0.1:8000/api")
-    .then(response => {response.json()})
-    .then(data => getData(data))
+    // fetch("http://127.0.0.1:8000/api")
+    // .then(response => {response.json()})
+    // .then(data => getData(data))
     return (
         <div className="App">
         <div>
